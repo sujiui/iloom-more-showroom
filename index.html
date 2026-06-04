@@ -2368,7 +2368,6 @@ img { background: #F0EEE8; }
    .hotspot-modal-inner 기본 grid(0.95fr 1fr) override. */
 .modal-twin-video .hotspot-modal-inner {
   display: block;
-  position: relative;
   padding: 0;                                /* 영상 풀블리드 — 베이지 여백 X */
   background: #000;
   border-radius: 24px;
@@ -3400,7 +3399,6 @@ img { background: #F0EEE8; }
 /* 협탁 시연 영상 모달 — TWIN modal-twin-video 패턴 차용. 영상 풀블리드 — 2026-05-22 */
 .modal-cabinet-video .hotspot-modal-inner {
   display: block;
-  position: relative;
   padding: 0;
   background: #000;
   border-radius: 24px;
@@ -3413,21 +3411,6 @@ img { background: #F0EEE8; }
   object-fit: contain;
   background: #000;
   border-radius: 24px;
-}
-.video-overlay-badge {
-  position: absolute;
-  top: 16px;
-  left: 16px;
-  background: #1C1C1E;
-  color: #FFFFFF;
-  font-size: 14px;
-  font-weight: 700;
-  padding: 6px 14px;
-  border-radius: 5px;
-  pointer-events: none;
-  z-index: 5;
-  white-space: nowrap;
-  letter-spacing: -0.01em;
 }
 .modal-flex-recon.is-open .recon-header,
 .modal-flex-ops.is-open   .recon-header {
@@ -5109,7 +5092,7 @@ img.img-failed {
             <video id="twinVideo" class="twin-video-el" preload="metadata" playsinline controls muted>
               <source src="videos/twin-demo.mp4" type="video/mp4">
             </video>
-            <div class="video-overlay-badge">2026 상반기 신제품 발표회</div>
+
           </div>
         </div>
 
@@ -5565,7 +5548,7 @@ img.img-failed {
             <video id="opsCabinetVideo" class="cabinet-video-el" preload="metadata" playsinline controls muted>
               <source src="videos/cabinet-demo.mp4" type="video/mp4">
             </video>
-            <div class="video-overlay-badge">2026 상반기 신제품 발표회</div>
+
           </div>
           <div class="hotspot-modal-counter"><strong>02 · 시연 영상</strong></div>
         </div>
