@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
@@ -436,8 +436,8 @@ strong { font-weight: 700; letter-spacing: 0; }
 }
 .overview-table td strong { font-weight: 700; }
 .overview-table td small {
-  display: block;
-  margin-top: 2px;
+  display: inline;
+  margin-top: 0;
   font-size: 21px;             /* 21px 이상 룰 — 위계는 weight·색상으로 */
   font-weight: 400;
   color: var(--ink-mute);
@@ -3396,6 +3396,46 @@ img { background: #F0EEE8; }
   box-shadow: 0 6px 14px rgba(107,95,70,0.35);
 }
 
+/* 수납헤드 상세 사진 모달 */
+.modal-headboard-photos .hotspot-modal-inner {
+  display: flex;
+  flex-direction: column;
+  padding: 32px 40px 28px;
+  height: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.modal-headboard-photos .recon-header {
+  flex-shrink: 0;
+}
+.headboard-gallery {
+  flex: 1;
+  display: flex;
+  gap: 32px;
+  margin-top: 28px;
+  min-height: 0;
+}
+.headboard-gallery-fig {
+  flex: 1;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+.headboard-gallery-fig img {
+  width: 100%;
+  flex: 1;
+  min-height: 0;
+  object-fit: cover;
+  border-radius: 12px;
+}
+.headboard-gallery-fig figcaption {
+  flex-shrink: 0;
+  margin-top: 12px;
+  font-size: 18px;
+  color: var(--ink-mute);
+  text-align: center;
+}
+
 /* 협탁 시연 영상 모달 — TWIN modal-twin-video 패턴 차용. 영상 풀블리드 — 2026-05-22 */
 .modal-cabinet-video .hotspot-modal-inner {
   display: block;
@@ -4638,7 +4678,7 @@ img.img-failed {
             <tbody>
               <tr>
                 <th>모델명</th>
-                <td><strong>모어 (MORE)</strong></td>
+                <td><strong>모어 — MORE THAN REST</strong> <small>휴식을 넘어 삶의 질을 높이다</small></td>
               </tr>
               <tr>
                 <th>카테고리</th>
@@ -4661,11 +4701,11 @@ img.img-failed {
               </tr>
               <tr>
                 <th>구성</th>
-                <td>모션베드 다리형 4종 · 협탁 3종 <small>(박스형 모션은 2027년 상반기까지 순차 출시 예정)</small></td>
+                <td>다리형 (스프링 · 메모리폼 / 수납헤드 · 무헤드) · 협탁 (패널형 · 코너형)</td>
               </tr>
               <tr>
                 <th>사이즈</th>
-                <td><strong>SS</strong> 1,280 × 2,225mm (헤드형) / 1,280 × 2,060mm (무헤드형) <small><strong>Q · K 미운영</strong></small></td>
+                <td><strong>SS</strong> 1,280 × 2,225mm (헤드형) / 1,280 × 2,060mm (무헤드형)</td>
               </tr>
               <tr>
                 <th>색상</th>
@@ -4816,7 +4856,7 @@ img.img-failed {
             <div class="promise-card-body">
               <div class="promise-card-tag">PILLAR ① · DESIGN</div>
               <div class="promise-card-title">호텔 디자인</div>
-              <div class="promise-card-detail">일룸 최초로 <strong>다리형</strong>을 도입하고, 침대·협탁 윗선을 <strong>887mm</strong>로 통일해 호텔 침실 라인을 완성했습니다.</div>
+              <div class="promise-card-detail">일룸 최초로 <strong>다리형</strong>을 도입하고, <strong>수납헤드와 협탁 패널 높이를 887mm</strong>로 통일해 호텔 침실 라인을 완성했습니다.</div>
             </div>
           </div>
           <div class="promise-card c2">
@@ -4832,7 +4872,7 @@ img.img-failed {
             <div class="promise-card-body">
               <div class="promise-card-tag">PILLAR ③ · FLEXIBLE</div>
               <div class="promise-card-title">자유 선택</div>
-              <div class="promise-card-detail"><strong>헤드·매트리스·프레임을 자유 조합</strong>, 시간이 지나면 협탁까지 더해 재구성 — 모어 시리즈만 있으면 침실이 따라옵니다.</div>
+              <div class="promise-card-detail">헤드, 매트리스, 협탁까지 <strong>본인의 침실 활동에 맞게</strong> 원하는 대로 구성할 수 있습니다.</div>
             </div>
           </div>
           <div class="promise-card c4">
@@ -4840,7 +4880,7 @@ img.img-failed {
             <div class="promise-card-body">
               <div class="promise-card-tag">PILLAR ④ · COMFORT</div>
               <div class="promise-card-title">각자의 편안함</div>
-              <div class="promise-card-detail">스프링·메모리폼 어떤 조합이어도 두께가 <strong>230mm</strong>로 같고, <strong>큐알루마 항균</strong>과 덴마크 <strong>리낙(LINAK) 모터 5년 보증</strong>으로 오래 갑니다.</div>
+              <div class="promise-card-detail">스프링·메모리폼 어떤 조합이어도 두께가 <strong>230mm</strong>로 같고, <strong>균감소성이 최상인 큐알루마 스프링</strong>과 덴마크 <strong>리낙(LINAK) 모터 5년 보증</strong>으로 오래 갑니다.</div>
             </div>
           </div>
           <div class="promise-card c5">
@@ -4889,7 +4929,7 @@ img.img-failed {
               <div class="di-answer-eyebrow">모어의 답</div>
               <div class="di-answer-title">호텔 디자인</div>
               <div class="di-answer-body">
-                <strong>다리형 구조 + 887mm 수평선</strong>으로<br>
+                <strong>다리형 구조 + 887mm 높이 통일</strong>로<br>
                 완성하는 호텔 침실 라인.
               </div>
             </div>
@@ -4901,7 +4941,7 @@ img.img-failed {
           <div class="slide-eyebrow fade-up">PILLAR ① · DESIGN</div>
           <h2 class="slide-title fade-up">호텔 디자인 — 기능 가구가 아닌 인테리어 가구</h2>
           <p class="slide-intro fade-up-2">
-            <strong>모어는</strong> 기존 박스형 모션베드의 한계를 <strong>다리형 구조</strong>로 풀고, <strong>샌드 오크</strong>와 <strong>887mm 수평선</strong>으로 호텔 침실 라인을 완성합니다.
+            <strong>모어는</strong> 기존 박스형 모션베드의 한계를 <strong>다리형 구조</strong>로 풀고, <strong>샌드 오크</strong>와 <strong>887mm 높이 통일</strong>로 호텔 침실 라인을 완성합니다.
           </p>
         </div>
 
@@ -4917,7 +4957,7 @@ img.img-failed {
                헤더 글자·navbar와 안 겹치게 세로 47%(상)·78%(하)로 배치 -->
           <button type="button" class="hotspot" data-target="dh-887" data-order="4" style="top:41%; left:25%;">
             <span class="hotspot-photo"><img src="images/image-100-1024x610.png" alt="" loading="lazy"></span>
-            <div class="hotspot-key">887mm 수평선</div>
+            <div class="hotspot-key">887mm 높이 통일</div>
           </button>
           <button type="button" class="hotspot" data-target="dh-so" data-order="2" style="top:36%; left:75%;">
             <span class="hotspot-photo"><img src="images/SO.png" alt="" loading="lazy"></span>
@@ -4928,8 +4968,8 @@ img.img-failed {
             <div class="hotspot-key">다리형 + 145mm</div>
           </button>
           <button type="button" class="hotspot" data-target="dh-corner" data-order="3" style="top:78%; left:76%;">
-            <span class="hotspot-photo"><img src="images/corner-cap.png" alt="" loading="lazy"></span>
-            <div class="hotspot-key">라운드 코너캡</div>
+            <span class="hotspot-photo"><img src="images/round-treatment.png" alt="" loading="lazy"></span>
+            <div class="hotspot-key">라운드 처리</div>
           </button>
         </div><!-- /.design-hotspot-stage — 모달은 아래 slide 직속으로 -->
 
@@ -5003,11 +5043,11 @@ img.img-failed {
             <button class="hotspot-modal-close" type="button" aria-label="닫기">&times;</button>
             <div class="hotspot-modal-inner">
               <div class="hotspot-modal-photo">
-                <img src="images/corner-cap.png" alt="라운드 코너캡 — 모서리 마감재 클로즈업">
+                <img src="images/round-treatment.png" alt="라운드 처리 — R값 라운드 모서리 마감">
               </div>
               <div class="hotspot-modal-text">
-                <div class="hotspot-modal-tag">DESIGN ③ · 모서리 마감</div>
-                <h3 class="hotspot-modal-title">라운드 코너캡<small>모서리 마감재 — 호텔 실루엣 · 어린이 안전</small></h3>
+                <div class="hotspot-modal-tag">DESIGN ③ · 라운드 처리</div>
+                <h3 class="hotspot-modal-title">라운드 처리<small>R값 라운드 처리로 마감</small></h3>
                 <p class="hotspot-modal-desc">
                   <strong>모어는</strong> 각진 마감 대신 <strong>부드러운 라운드 곡선</strong>으로 처리해 호텔 침대 특유의 정돈된 실루엣을 살립니다.
                   덤으로 발가락·무릎이 부딪혀도 안전해 <strong>어린이가 있는 가정에도 적합</strong>합니다.
@@ -5022,24 +5062,24 @@ img.img-failed {
             <button class="hotspot-modal-close" type="button" aria-label="닫기">&times;</button>
             <div class="hotspot-modal-inner">
               <div class="hotspot-modal-photo">
-                <img src="images/image-100-1024x610.png" alt="887mm 수평선 — 모션베드 헤드형·협탁 윗선 일치">
+                <img src="images/image-100-1024x610.png" alt="887mm 높이 통일 — 수납헤드·협탁 패널 높이 일치">
               </div>
               <div class="hotspot-modal-text">
-                <div class="hotspot-modal-tag">DESIGN ④ · 수평선 통일</div>
-                <h3 class="hotspot-modal-title">887mm 수평선<small>헤드형 모션베드 · 협탁 윗선 일치</small></h3>
+                <div class="hotspot-modal-tag">DESIGN ④ · 높이 통일</div>
+                <h3 class="hotspot-modal-title">887mm 높이 통일<small>수납헤드 · 협탁 패널 높이 일치</small></h3>
                 <p class="hotspot-modal-desc">
-                  모션베드 헤드형·협탁, 두 제품 윗선이 모두 <strong>887mm로 통일됐습니다</strong> <small>(헤드형 기준 · 무헤드형은 별도)</small>.
-                  나란히 놓으면 수평선이 한 줄로 이어져 시리즈 전체가 <strong>한 세트처럼 정돈된 호텔 침실 분위기</strong>가 완성됩니다.
+                  수납헤드와 협탁 패널, 두 제품 높이가 모두 <strong>887mm로 통일됐습니다</strong> <small>(수납헤드 기준 · 무헤드형은 별도)</small>.
+                  나란히 놓으면 높이가 한 줄로 맞춰져 시리즈 전체가 <strong>한 세트처럼 정돈된 호텔 침실 분위기</strong>가 완성됩니다.
                   침대 따로, 협탁 따로 산 느낌이 아니라 인테리어가 완성된 한 공간으로 보이는 게 모어 디자인의 핵심입니다.
                 </p>
                 <!-- 시각화 — 세 가구의 윗선이 같은 점선(887mm 수평선)에 닿음 (막대 → 실제 사진으로 교체) -->
                 <div class="h887-diagram">
-                  <div class="h887-diagram-label">887mm 수평선</div>
+                  <div class="h887-diagram-label">887mm 높이 통일</div>
                   <div class="h887-diagram-rule"></div>
                   <div class="h887-bars">
                     <div class="h887-bar-col">
-                      <img class="h887-bar-img" src="images/motion-bed-887.png" alt="모어 모션베드 헤드형 — 887mm" loading="lazy">
-                      <div class="h887-bar-caption">모션베드 헤드형</div>
+                      <img class="h887-bar-img" src="images/motion-bed-887.png" alt="모어 모션베드 수납헤드 — 887mm" loading="lazy">
+                      <div class="h887-bar-caption">모션베드 수납헤드</div>
                       <div class="h887-bar-value">887mm</div>
                     </div>
                     <div class="h887-bar-col">
@@ -5067,7 +5107,7 @@ img.img-failed {
           "&ldquo;모션베드 보러 오시는 분들이 &lsquo;기능은 좋은데 디자인이 좀 병원 같다&rsquo;고 하시잖아요. 모어는 다리형이라 침실에 놓으면 딱 호텔 느낌 나거든요. 직접 보시면 &lsquo;이게 모션베드야?&rsquo; 하실 거예요.&rdquo;",
           "▶ ② 샌드 오크",
           "&ldquo;샌드 오크는 호텔 침실에서 가장 많이 쓰이는 색감이에요. 어떤 침구나 커튼이랑 매칭해도 따로 안 놀거든요. 시간이 지나도 안 질리는 톤이에요.&rdquo;",
-          "▶ ③ 887mm 수평선",
+          "▶ ③ 887mm 높이 통일",
           "&ldquo;모어는 침대 헤드, 협탁 높이가 887mm로 다 똑같아요. 둘을 나란히 놓으시면 윗줄이 한 줄로 쫙 이어지거든요. 일부러 맞춘 거예요. 호텔 침실 가보시면 가구들이 다 정돈된 느낌 나잖아요? 그 라인이 모어 시리즈로 자연스럽게 만들어지는 거죠.&rdquo;",
           "▶ 30초 요약",
           "&ldquo;모어는 다리형이라 침실에 놓으면 딱 호텔 느낌 나고, 협탁이랑 윗선이 887mm로 다 맞아서 정돈된 라인이 생겨요. 색상도 샌드 오크 하나라서 어떤 침구에도 잘 어울려요.&rdquo;",
@@ -5104,7 +5144,7 @@ img.img-failed {
                  data-text="&ldquo;둘이 같이 쓰고 싶어서 침대 2개를 붙여 놨는데,<br>프레임 때문에...<br>그 틈이 영 거슬려요.&rdquo;"></div>
             <div class="di-answer">
               <div class="di-answer-eyebrow">모어의 답</div>
-              <div class="di-answer-title">빈틈 없는 트윈</div>
+              <div class="di-answer-title">따로 또 같이, 빈틈 없는 트윈</div>
               <div class="di-answer-body">
                 <strong>200mm 무빙 매트리스</strong>로<br>
                 2대 사이 갭 <strong>0mm</strong>.
@@ -5114,7 +5154,7 @@ img.img-failed {
         </div>
 
         <div class="slide-eyebrow fade-up">PILLAR ② · TWIN LAYOUT</div>
-        <h2 class="slide-title fade-up">빈틈 없는 트윈 — 두 침대가 하나의 침대처럼</h2>
+        <h2 class="slide-title fade-up">빈틈 없는 트윈 — 따로 또 같이, 두 침대가 하나처럼</h2>
         <p class="slide-intro fade-up-2">
           <strong>모어는</strong> 두 침대를 붙여도 <strong>매트리스 사이에 틈</strong>이 생기던 문제를 <strong>무빙 매트리스</strong> 구조로 풀었습니다.<br>
           <strong>매트리스보다 양쪽 각 100mm 넓은 프레임</strong>을 서로 붙여 둔 채, 매트리스가 그 안에서 좌우로 움직입니다.
@@ -5125,7 +5165,7 @@ img.img-failed {
           <div class="twin-info-card twin-thick-card">
             <div class="twin-info-title">매트리스 두께 <strong>230mm</strong> — 단차 없는 수평</div>
             <div class="twin-info-desc">
-              스프링·메모리폼 어떤 조합이어도 <strong>두께 동일</strong>. 트윈으로 누워도 매끈한 수평선이 이어집니다.
+              스프링·메모리폼 어떤 조합이어도 <strong>두께 동일</strong>. 트윈으로 누워도 매끈하게 이어집니다.
             </div>
             <div class="thick-diagram">
                 <div class="thick-diagram-side">
@@ -5166,7 +5206,7 @@ img.img-failed {
               <!-- "왜 좋은지" 강조 노트 — 교육톤(직설·사실). 학습 노트 230mm 트윈 시각 완성도에서 추출 -->
               <div class="thick-benefit-note">
                 한 분이 스프링, 다른 분이 메모리폼을 골라도 두께는 <strong>230mm 동일</strong>.<br>
-                트윈으로 누웠을 때 단차가 없어 두 침대 위 수평선이 <strong>한 줄로 정렬됩니다</strong>.
+                트윈으로 누웠을 때 단차가 없어 두 침대 위가 <strong>한 줄로 맞춰집니다</strong>.
               </div>
             </div>
 
@@ -5241,7 +5281,7 @@ img.img-failed {
               <div class="di-answer-eyebrow">모어의 답</div>
               <div class="di-answer-title">자유 선택</div>
               <div class="di-answer-body">
-                헤드 · 매트리스 · 프레임 —<br>
+                헤드 · 매트리스 · 협탁 —<br>
                 처음도, 나중도 <strong>모두 자유 선택.</strong>
               </div>
             </div>
@@ -5280,7 +5320,7 @@ img.img-failed {
           </button>
           <button type="button" class="flex-card" data-target="fx-ops" data-order="3">
             <div class="flex-card-img">
-              <img src="images/flex-card-3-ops.png" alt="모어 시리즈 구성 — 모션베드·협탁">
+              <img src="images/more-side-table.jpg" alt="모어 시리즈 구성 — 모션베드·협탁">
             </div>
             <div class="flex-card-body">
               <div class="flex-card-step"><span class="flex-card-step-num">3</span><span class="flex-card-step-label">시리즈 추가</span></div>
@@ -5337,7 +5377,7 @@ img.img-failed {
                   </tr>
                   <tr>
                     <th>수납</th>
-                    <td><strong>머리맡 선반</strong> · USB 충전 포트 내장</td>
+                    <td><strong>머리맡 선반</strong> · USB 충전 포트 내장 <button type="button" class="recon-video-cta" data-headboard-photos aria-label="수납헤드 상세 사진 보기">📷 상세 사진 보기</button></td>
                     <td>없음</td>
                   </tr>
                   <tr>
@@ -5384,7 +5424,7 @@ img.img-failed {
                       <div class="recon-photo-cycle">
                         <figure class="recon-cycle-figure"><img src="images/recon-1person.png" alt="혼자 시작 — 1인 SS"></figure>
                         <figure class="recon-cycle-figure"><img src="images/recon-2person.png" alt="둘이 함께 — 2인 SS+SS"></figure>
-                        <figure class="recon-cycle-figure"><img src="images/recon-2person-table.png" alt="사이공간 — 2인 SS+패널+SS"></figure>
+                        <figure class="recon-cycle-figure"><img src="images/more-twin-side-table.png" alt="사이공간 — 2인 SS+패널+SS"></figure>
                         <figure class="recon-cycle-figure"><img src="images/recon-expansion-a.png" alt="이사·확장 — 코너+SS+SS+코너"></figure>
                         <figure class="recon-cycle-figure"><img src="images/recon-expansion-b.png" alt="전체 레이아웃 — 코너+SS+패널+SS+코너"></figure>
                         <button class="flex-arrow flex-arrow-prev" data-flex-step="-1" type="button" aria-label="이전">‹</button>
@@ -5434,7 +5474,7 @@ img.img-failed {
                   <tr class="frame-mix-photos">
                     <th></th>
                     <td><img src="images/ops-more-bed.png" alt="다리형 모션"></td>
-                    <td><img src="images/frame-mix-leg-normal.png" alt="다리형 일반"></td>
+                    <td><img src="images/중간200.png" alt="다리형 일반"></td>
                     <td><img src="images/frame-mix-box-motion.png" alt="박스형 모션"></td>
                   </tr>
                   <tr>
@@ -5453,7 +5493,7 @@ img.img-failed {
                     <th>매트리스</th>
                     <td>모션 일체형 <small>(헤이븐 플렉서블)</small></td>
                     <td>일반 매트리스 <small>(고객 선택)</small></td>
-                    <td>모션 일체형</td>
+                    <td>모션 분리형</td>
                   </tr>
                   <tr>
                     <th>모션 기능</th>
@@ -5516,14 +5556,20 @@ img.img-failed {
                   <tr class="recon-table-purpose">
                     <th>사이즈</th>
                     <td><strong>SS 1,280 × 2,225</strong><br><small>(헤드형 기준)</small></td>
-                    <td><strong>폭 400</strong></td>
-                    <td><strong>폭 400</strong> · L/R</td>
+                    <td><strong>폭 390</strong></td>
+                    <td><strong>폭 412</strong> · L/R</td>
+                  </tr>
+                  <tr class="recon-table-purpose">
+                    <th>내장 기능</th>
+                    <td>—</td>
+                    <td>충전 포트 · 멀티탭</td>
+                    <td>충전 포트 · 멀티탭</td>
                   </tr>
                   <tr class="recon-table-purpose">
                     <th>용도</th>
                     <td>잘 자고 · 4모드 자세로<br>독서·TV·휴식까지</td>
                     <td>침대 사이 단독 배치 · 모듈 사이 연결용</td>
-                    <td>침대 양 끝 코너 마감 · 측면 가림판으로 외부 시선 차단</td>
+                    <td>침대 양 끝 코너 마감<br>측면 가림판으로 외부 시선 차단</td>
                   </tr>
                   <tr class="recon-table-cta-row">
                     <th></th>
@@ -5536,6 +5582,27 @@ img.img-failed {
             </div>
           </div>
           <div class="hotspot-modal-counter"><strong>03</strong> / 04</div>
+        </div>
+
+        <!-- 수납헤드 상세 사진 모달 — 다리형 모션 셀의 "상세 사진 보기" 버튼 클릭 시 열림 -->
+        <div class="hotspot-modal modal-headboard-photos" id="fx-headboard-photos">
+          <button class="hotspot-modal-close" type="button" aria-label="닫기">&times;</button>
+          <div class="hotspot-modal-inner">
+            <div class="recon-header">
+              <div class="hotspot-modal-tag">수납헤드 · 상세 사진</div>
+              <h3 class="hotspot-modal-title">수납헤드 — 충전 포트 · 수납 선반</h3>
+            </div>
+            <div class="headboard-gallery">
+              <figure class="headboard-gallery-fig">
+                <img src="images/more-usb-charging.png" alt="헤드보드 상단 고속충전 USB 포트">
+                <figcaption>고속충전 USB 포트 · 멀티탭 내장</figcaption>
+              </figure>
+              <figure class="headboard-gallery-fig">
+                <img src="images/more-headboard-storage.png" alt="헤드보드 수납 선반">
+                <figcaption>수납 선반 — 책 · 17인치 노트북 수납 가능</figcaption>
+              </figure>
+            </div>
+          </div>
         </div>
 
         <!-- 협탁 시연 영상 모달 (시리즈 구성 모달 ③ → 시간 재구성 모달 ④ 사이 자동 진입)
@@ -5599,12 +5666,12 @@ img.img-failed {
           <div class="design-intro-dim"></div>
           <div class="design-intro-wrapper">
             <div class="di-quote"
-                 data-text="&ldquo;취향도 다르고,<br>땀도 많고,<br>오래 쓸 수 있을지도 걱정이에요.&rdquo;"></div>
+                 data-text="&ldquo;취향도 다르고,<br>체형도 다르고,<br>오래 쓸 수 있을지도 걱정이에요.&rdquo;"></div>
             <div class="di-answer">
               <div class="di-answer-eyebrow">모어의 답</div>
               <div class="di-answer-title">각자의 편안함</div>
               <div class="di-answer-body">
-                <strong>230mm 두께 통일</strong> · 큐알루마 항균<br>
+                <strong>230mm 두께 통일</strong> · 큐알루마 스프링<br>
                 · 리낙 모터 <strong>5년 보증.</strong>
               </div>
             </div>
@@ -5616,7 +5683,7 @@ img.img-failed {
           <div class="slide-eyebrow fade-up">PILLAR ④ · COMFORT</div>
           <h2 class="slide-title fade-up">각자의 편안함 — 잘 자기 위한 모든 것</h2>
           <p class="slide-intro fade-up-2">
-            한 분은 스프링, 다른 분은 메모리폼 — 취향대로 고르실 수 있습니다. 매트리스는 한국 환경에 맞춘 <strong>큐알루마</strong> 항균·내식 사양을 적용했고, 모터는 의료용 <strong>리낙(LINAK)</strong>으로 5년 보증을 제공합니다.
+            한 분은 스프링, 다른 분은 메모리폼 — 취향대로 고르실 수 있습니다.<br>스프링은 <strong>큐알루마</strong> 소재로 제작하고, 두 매트리스 모두 <strong>오코텍스 1등급 원단</strong>을 사용했습니다. 모터는 의료용 <strong>리낙(LINAK)</strong>으로 5년 보증을 제공합니다.
           </p>
         </div>
 
@@ -5631,7 +5698,7 @@ img.img-failed {
           <!-- ② 큐알루마 — 한국 환경 (매트리스 내부 스프링 영역 — 중앙 우측) -->
           <button type="button" class="hotspot" data-target="cf-quali" data-order="2" style="top:41%; left:62%;">
             <span class="hotspot-photo"><img src="images/mattress-spring-qualima.jpg" alt="" loading="lazy"></span>
-            <div class="hotspot-key">큐알루마 항균</div>
+            <div class="hotspot-key">큐알루마 스프링</div>
           </button>
           <!-- ③ LINAK 모터 + 5년 보증 (침대 하단 모션 부분) -->
           <button type="button" class="hotspot" data-target="cf-motor" data-order="3" style="top:73%; left:42%;">
@@ -5666,8 +5733,8 @@ img.img-failed {
                     <td><img src="images/mattress-foam-icon.png" alt="헤이븐 플렉서블 메모리폼 — 폼 3D"></td>
                   </tr>
                   <tr class="recon-table-desc">
-                    <td><strong>큐알루마(Cu-Alumar)</strong> 포켓스프링<br>+ 각 탄성별 폼 조합 · 펠트 · 합판</td>
-                    <td><strong>메모리폼</strong><br>+ 각 탄성별 폼 조합 · 합판</td>
+                    <td><strong>큐알루마(Cu-Alumar)</strong> 포켓스프링<br>+ 각 탄성별 폼 조합 · 펠트</td>
+                    <td><strong>메모리폼</strong><br>+ 각 탄성별 폼 조합</td>
                   </tr>
                   <tr class="recon-table-desc">
                     <td><strong>탄탄한 지지력</strong> · 통기성</td>
@@ -5678,7 +5745,7 @@ img.img-failed {
                     <td><strong>몸 곡선 맞춤 + 충격 흡수</strong></td>
                   </tr>
                   <tr class="recon-table-spec">
-                    <td colspan="2">공통 사양 — <strong>SS 1,100 × 2,000 × 230mm</strong> · OEKO-TEX STANDARD 100 · Sanitized AG · 폴리에스터+레이온 커버</td>
+                    <td colspan="2">공통 사양 — <strong>SS 1,100 × 2,000 × 230mm</strong> · OEKO-TEX STANDARD 100 · 새니타이즈드 패딩솜</td>
                   </tr>
                 </tbody>
               </table>
@@ -5694,7 +5761,7 @@ img.img-failed {
           <div class="hotspot-modal-inner">
             <div class="recon-header">
               <div class="hotspot-modal-tag">COMFORT ② · 한국 환경 강화</div>
-              <h3 class="hotspot-modal-title">큐알루마(QUALIMA) — 항균 + 내식성</h3>
+              <h3 class="hotspot-modal-title">큐알루마(Cu-Alumar) — 균감소성 + 내식성</h3>
             </div>
             <div class="recon-photos">
               <table class="recon-state-table">
@@ -5707,7 +5774,7 @@ img.img-failed {
                   <tr>
                     <td class="recon-photo-cell">
                       <div class="recon-photo-cycle">
-                        <figure class="recon-cycle-figure"><img src="images/mattress-spring-qualima.jpg" alt="큐알루마 항균 포켓스프링"></figure>
+                        <figure class="recon-cycle-figure"><img src="images/mattress-spring-qualima.jpg" alt="큐알루마 스프링"></figure>
                         <figure class="recon-cycle-figure"><img src="images/mattress-spring-qualima-corrosion.jpg" alt="소금물 5%·3일 내식성 테스트"></figure>
                         <button class="flex-arrow flex-arrow-prev" data-flex-step="-1" type="button" aria-label="이전">‹</button>
                         <button class="flex-arrow flex-arrow-next" data-flex-step="1"  type="button" aria-label="다음">›</button>
@@ -5794,11 +5861,11 @@ img.img-failed {
         <div class="caption-box" data-captions='[
           "▶ COMFORT 핵심 한 줄",
           "<strong>각자의 편안함 — 잘 자기 위한 모든 것.</strong>",
-          "<table class=\"narration-table\"><tbody><tr><th>축 ①</th><td><mark>취향에 맞는 매트리스</mark> (스프링/메모리폼 2종)</td></tr><tr><th>축 ②</th><td><mark>한국 환경 강화</mark> (큐알루마 항균·내식)</td></tr><tr><th>축 ③</th><td><mark>오래 가는 모터 신뢰</mark> (LINAK 5년 AS)</td></tr></tbody></table>",
+          "<table class=\"narration-table\"><tbody><tr><th>축 ①</th><td><mark>취향에 맞는 매트리스</mark> (스프링/메모리폼 2종)</td></tr><tr><th>축 ②</th><td><mark>한국 환경 강화</mark> (큐알루마 스프링 — 균감소성·내식)</td></tr><tr><th>축 ③</th><td><mark>오래 가는 모터 신뢰</mark> (LINAK 5년 AS)</td></tr></tbody></table>",
           "<small>※ 가격·자유 선택 등 다른 결은 SLIDE 6 FLEXIBLE / SLIDE 8 VALUE에서 다룸</small>",
           "▶ ① 헤이븐 플렉서블 (HAVEN FLEXIBLE) — 스프링·메모리폼 2종",
           "<table class=\"narration-table\"><tbody><tr><th>헤이븐 플렉서블<br><strong>스프링</strong></th><td>큐알루마 포켓스프링 — <mark>탄탄한 지지력 · 통기성 · 한국 온돌 환경 강함</mark></td></tr><tr><th>헤이븐 플렉서블<br><strong>메모리폼</strong></th><td>몸을 감싸는 느낌 · <mark>압력 분산 · 충격 흡수</mark></td></tr><tr><th>공통</th><td>두께 <mark><strong>230mm 동일</strong></mark> · SS 사이즈 빌트인</td></tr></tbody></table>",
-          "▶ ② 큐알루마(QUALIMA) — 한국 환경 강화",
+          "▶ ② 큐알루마(Cu-Alumar) — 한국 환경 강화",
           "<table class=\"narration-table\"><tbody><tr><th>일반 본넬 스프링</th><td>땀·온돌·고습에서 <strong>녹슬기 쉬움</strong></td></tr><tr><th><mark>큐알루마</mark></th><td>KMTR <mark><strong>항균 최상 등급</strong></mark> <small>(대장균·포도상구균)</small> + 소금물 5%·3일 <strong>내식성 통과</strong> <small>(맑은 물 유지)</small></td></tr></tbody></table>",
           "한국 시장에 맞춘 <mark>항균·내식 매트리스</mark>.",
           "▶ ③ 리낙(LINAK) 모터 + 4자세 + AS 통합",
@@ -6133,7 +6200,7 @@ img.img-failed {
           "▶ 협탁 호환 — 헤드형 전용",
           "<table class=\"narration-table\"><tbody><tr><th>호환</th><td><mark><strong>헤드형만</strong></mark> 협탁 결합 가능 (헤드보드 결합부 매칭)</td></tr><tr><th>무헤드형</th><td>협탁 결합 <strong>불가</strong></td></tr><tr><th>협탁 (운영)</th><td>패널형 / 코너형 L / 코너형 R (400폭 · 3종)</td></tr><tr><th>운영</th><td>협탁 설치·무헤드↔헤드 교체는 <strong>일룸 시공 필수</strong></td></tr></tbody></table>",
           "▶ 추후 출시 라인업 — 향후 가능성",
-          "<table class=\"narration-table\"><tbody><tr><th>다리형 일반</th><td>모션 없는 다리형 프레임 — 별도 공지 전까지 <mark>언급 자제</mark></td></tr><tr><th>박스형 모션</th><td>박스형 프레임 + 모션 구성 — 운영 검토 중</td></tr><tr><th>출시 시점</th><td>2027년 상반기까지 순차 검토 — <mark>구체 시점 단언 금지</mark></td></tr></tbody></table>",
+          "<table class=\"narration-table\"><tbody><tr><th>다리형 일반</th><td>모션 없는 다리형 프레임 — 별도 공지 전까지 <mark>언급 자제</mark></td></tr><tr><th>박스형 모션</th><td>박스형 프레임 + 모션 분리형 구성 — 운영 검토 중</td></tr><tr><th>출시 시점</th><td>2027년 상반기까지 순차 검토 — <mark>구체 시점 단언 금지</mark></td></tr></tbody></table>",
           "---",
           "▶ 고객 응대 시나리오",
           "<div class=\"narration-qa\"><div class=\"qa-row\"><div class=\"qa-label q\">질문</div><div class=\"qa-content\">&ldquo;헤드형이랑 무헤드형, 어느 게 좋나요?&rdquo;</div></div><div class=\"qa-row\"><div class=\"qa-label a\">답변</div><div class=\"qa-content\"><table class=\"narration-table\"><tbody><tr><th>① 협탁 필요</th><td><mark>헤드형</mark> — 머리맡 수납 + 호텔 무드</td></tr><tr><th>② 작은 침실<br>· 심플 선호</th><td><mark>무헤드형</mark> — 라인 깔끔, 침실 좁을 때 유리</td></tr><tr><th>매트리스 선택</th><td>온돌·통기성·단단함 선호 → 스프링<br>척추 압박·감싸는 느낌 선호 → 메모리폼 (SLIDE 7 COMFORT 참고)</td></tr></tbody></table></div></div></div>",
@@ -7385,7 +7452,7 @@ function openOneModal(slideEl, modal) {
     m.classList.toggle('is-open', willOpen);
     // FLEXIBLE 모달(fx-*) · COMFORT 모달(cf-*) 사이클 자동 시작/정지
     // 단, fx-cabinet-video는 영상 모달이라 사이클 처리 X
-    if (m.id && (m.id.startsWith('fx-') || m.id.startsWith('cf-')) && m.id !== 'fx-cabinet-video') {
+    if (m.id && (m.id.startsWith('fx-') || m.id.startsWith('cf-')) && m.id !== 'fx-cabinet-video' && m.id !== 'fx-headboard-photos') {
       if (willOpen) flexCycleStart(m.id);
       else flexCycleStop(m.id);
     }
@@ -7408,7 +7475,7 @@ function closeAllModals(slideEl) {
   if (!slideEl) return;
   slideEl.querySelectorAll('.hotspot-modal').forEach(m => {
     m.classList.remove('is-open');
-    if (m.id && (m.id.startsWith('fx-') || m.id.startsWith('cf-')) && m.id !== 'fx-cabinet-video') flexCycleStop(m.id);
+    if (m.id && (m.id.startsWith('fx-') || m.id.startsWith('cf-')) && m.id !== 'fx-cabinet-video' && m.id !== 'fx-headboard-photos') flexCycleStop(m.id);
     /* 슬라이드 5 시연 영상이 닫히면 video 정지 + 처음으로 (2026-05-22) */
     if (m.id === 'tw-video') {
       const v = document.getElementById('twinVideo');
@@ -7549,6 +7616,18 @@ document.addEventListener('click', (e) => {
     const videoModal = document.getElementById('fx-cabinet-video');
     if (videoModal) openOneModal(slide, videoModal);
     bumpAttract();                       // attract 타이머 리셋 — 영상 50s + buffering 잠깐 사이에 표지로 튕기는 것 방지
+    return;
+  }
+
+  // 수납헤드 상세 사진 보기 버튼 클릭 → 사진 모달 즉시 열기 (2026-06-04)
+  const headboardPhotosBtn = e.target.closest('[data-headboard-photos]');
+  if (headboardPhotosBtn) {
+    e.preventDefault();
+    e.stopPropagation();
+    pauseShow();
+    const photosModal = document.getElementById('fx-headboard-photos');
+    if (photosModal) openOneModal(slide, photosModal);
+    bumpAttract();
     return;
   }
 
